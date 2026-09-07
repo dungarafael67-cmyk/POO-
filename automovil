@@ -1,0 +1,52 @@
+using System;
+
+namespace P00_Unidad1
+{
+    public class Automovil
+    {
+        
+        public string Marca;
+        public string Modelo;
+        public int Anio;
+        public double VelocidadActual;
+
+        
+        public void Acelerar(double inc)
+        {
+            VelocidadActual += inc;
+        }
+
+        public void Frenar(double dec)
+        {
+            if (VelocidadActual - dec >= 0)
+                VelocidadActual -= dec;
+            else
+                VelocidadActual = 0;
+        }
+
+        public void MostrarInformacion()
+        {
+            Console.WriteLine("Marca: " + Marca);
+            Console.WriteLine("Modelo: " + Modelo);
+            Console.WriteLine("Año: " + Anio);
+            Console.WriteLine("Velocidad actual: " + VelocidadActual + " km/h");
+           
+        }
+    }
+
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Automovil miAuto = new Automovil();
+
+            miAuto.Marca = "ferrari";
+            miAuto.Modelo = "F80";
+            miAuto.Anio = 2020;
+            miAuto.VelocidadActual = 50;
+           
+
+            miAuto.MostrarInformacion();
+        }
+    }
+}

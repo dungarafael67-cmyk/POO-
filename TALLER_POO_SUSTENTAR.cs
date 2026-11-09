@@ -114,9 +114,9 @@ class Program
     {
         List<HabitacionHotel> habitaciones = new List<HabitacionHotel>
         {
-            new HabitacionHotel(101, "Individual", 50000),
-            new HabitacionHotel(202, "Doble", 80000),
-            new HabitacionHotel(303, "Suite", 150000),
+            new HabitacionHotel(101, "Individual", 55000),
+            new HabitacionHotel(202, "Doble", 70000),
+            new HabitacionHotel(303, "Suite", 140000),
             new HabitacionHotel(404, "Individual", 60000),
             new HabitacionHotel(505, "Doble", 90000)
         };
